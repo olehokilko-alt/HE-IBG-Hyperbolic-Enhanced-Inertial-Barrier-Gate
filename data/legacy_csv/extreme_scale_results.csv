@@ -1,0 +1,4 @@
+Grid_Size,Nodes_M,Success,Time_Sec,H_Max,K_Used,Status
+4096,16.777216,True,9.474089199997252,0.62186892737815,10000000,Success
+8192,67.108864,False,0,0,0,Skipped (RAM)
+16384,268.435456,False,0,0,0,Skipped (RAM)

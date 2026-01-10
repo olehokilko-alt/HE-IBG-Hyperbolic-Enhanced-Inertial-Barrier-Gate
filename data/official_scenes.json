@@ -1,0 +1,40 @@
+{
+  "official_subset": [
+    {
+      "dataset": "heightmap.png",
+      "N": 1024,
+      "speedup_E_over_HE": 46.65795111560925,
+      "speedup_D_over_HE": 5.413769933548295
+    },
+    {
+      "dataset": "heightmap.png",
+      "N": 256,
+      "speedup_E_over_HE": 21.531302024959032,
+      "speedup_D_over_HE": 2.0107893523679214
+    },
+    {
+      "dataset": "heightmap.png",
+      "N": 512,
+      "speedup_E_over_HE": 31.658969517072006,
+      "speedup_D_over_HE": 2.0780122072864082
+    },
+    {
+      "dataset": "ost003d.png",
+      "N": 1024,
+      "speedup_E_over_HE": 39.7829690240608,
+      "speedup_D_over_HE": 5.370180807375644
+    },
+    {
+      "dataset": "ost003d.png",
+      "N": 256,
+      "speedup_E_over_HE": 21.76831743980117,
+      "speedup_D_over_HE": 2.959063129170903
+    },
+    {
+      "dataset": "ost003d.png",
+      "N": 512,
+      "speedup_E_over_HE": 33.97470246762408,
+      "speedup_D_over_HE": 3.748417251424268
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Image,Grid_Size,RAM_Needed_GB,RAM_Available_GB,Skipped,Success,Time_Sec,H_Max,K_Used,Status
+heightmap.png,2048,0.2,5.26,False,True,4.178,0.16941428446219506,4086423,Success
+heightmap.png,4096,0.78,5.3,False,True,9.362,0.1643133104590777,10000000,Success
+heightmap.png,8192,3.12,5.2,False,True,10.798,0.16014148183381294,10000000,Success
+ost003d.png,2048,0.2,5.67,False,True,2.616,0.17276128281167902,2662143,Success
+ost003d.png,4096,0.78,6.1,False,True,11.563,0.16795511904364513,10000000,Success
+ost003d.png,8192,3.12,6.0,False,False,13.088,inf,10000000,Fail
