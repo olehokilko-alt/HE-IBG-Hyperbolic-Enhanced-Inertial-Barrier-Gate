@@ -87,4 +87,7 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - A* uses a different objective (sum‑of‑weights) and is shown for reference only.
 - For bottleneck quality, lower gap = closer to h*; Dijkstra (minimax) provides h* and typically has gap = 0.
 - Use official ranges for conservative claims; measured ranges often exceed them and are reported transparently.
+
+## Contact
+- Oleh Okilko — olehokilko@gmail.com
   - Includes runtime environment and optimizations (Python + Numba JIT, NumPy arrays, nopython caching)
