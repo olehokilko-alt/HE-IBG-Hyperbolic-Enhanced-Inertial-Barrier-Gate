@@ -11,7 +11,7 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - Speedups increase with grid size (N) on both datasets:
   - heightmap: Euclidean/HE = [21.53, 31.66, 46.66] at N = [256, 512, 1024]; Dijkstra/HE = [2.01, 2.08, 5.41]
   - ost003d: Euclidean/HE = [21.77, 33.98, 39.78] at N = [256, 512, 1024]; Dijkstra/HE = [2.96, 3.75, 5.37]
-- Rationale: HE‑IBG’s JIT‑accelerated O(N²) routines scale better relative to baselines that incur O(N² log N) or heavier per‑step overhead; larger grids amplify the relative advantage.
+- Rationale: HE‑IBG’s JIT‑accelerated routines scale favorably on larger grids relative to baselines with heavier per‑step overhead; larger grids amplify the relative advantage.
 
 ## Scaling Highlights
 - At N = 1024, HE‑IBG achieves ≈46.66× vs Euclidean and ≈5.41× vs Dijkstra on heightmap; ≈39.78× vs Euclidean and ≈5.37× vs Dijkstra on ost003d.
@@ -20,8 +20,8 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 
 ## What Makes HE‑IBG Different
 - Minimax (bottleneck) instead of sum of weights: guarantees on the worst obstacle along the route, relevant for safe/wide corridors.
-- Hyperbolic geometry: tunable speed/quality trade‑off via kappa, lambda_geo, K, R.
-- Quality control: reference h* (bottleneck optimum via minimax Dijkstra/Union‑Find) and gap |h_max−h*|/h* per scene.
+- Hyperparameters enable tunable speed/quality trade‑off in a hyperbolic geometry setting.
+- Quality control: reference h* (bottleneck optimum via minimax method) and gap |h_max−h*|/h* per scene.
 - Resource efficiency: stable RAM usage and real execution times on large grids up to 8192×8192.
 
 ## Comparison to Other Methods

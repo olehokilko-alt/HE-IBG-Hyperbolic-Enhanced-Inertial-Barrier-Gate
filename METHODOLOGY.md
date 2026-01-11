@@ -20,10 +20,8 @@ Evaluate HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) on minimax (bott
 - Grid sizes: 256, 512, 1024 (and stress: 2048, 4096, 8192)
 
 ## Parameter Sweeps
-- kappa ∈ {−0.5, −0.75, −1.0}
-- lambda_geo ∈ {0.25, 0.35, 0.5, 0.7}
-- K (iterations bound) = 500000 (unless stress)
-- R = 1
+- Hyperparameters varied across conservative ranges to balance speed/quality trade‑off
+- Exact values and schedules are not disclosed in this repository
 
 ## Official Ranges Policy
 - Euclidean vs HE‑IBG: 21×–46×
@@ -47,7 +45,7 @@ Evaluate HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) on minimax (bott
 
 ## Runtime Environment and Optimizations
 - Language: Python (tested with Python 3.10 on Windows 10)
-- Acceleration: Numba JIT compilation in nopython mode with caching for hot kernels (e.g., geometry embedding and bias computations)
+- Acceleration: Numba JIT compilation in nopython mode with caching for numeric kernels
 - Arrays: NumPy dtypes (complex128, float64, int32) and contiguous memory layout to reduce Python overhead and improve cache locality
 - Orchestration: pure Python for experiment control; critical numeric routines are JIT‑compiled
 - Parallelization: benchmarks reported here run single‑process; focus is on algorithmic gains and JIT acceleration rather than multi‑threading
