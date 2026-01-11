@@ -44,3 +44,10 @@ Evaluate HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) on minimax (bott
 - A* is not used for official bottleneck comparisons due to different objective.
 - Stress at 8192 may reveal failures on pathological fields; these are reported transparently (e.g., H_Max = inf).
 - Timing differences across hardware are expected; speedups normalize relative HE‑IBG vs baselines.
+
+## Runtime Environment and Optimizations
+- Language: Python (tested with Python 3.10 on Windows 10)
+- Acceleration: Numba JIT compilation in nopython mode with caching for hot kernels (e.g., geometry embedding and bias computations)
+- Arrays: NumPy dtypes (complex128, float64, int32) and contiguous memory layout to reduce Python overhead and improve cache locality
+- Orchestration: pure Python for experiment control; critical numeric routines are JIT‑compiled
+- Parallelization: benchmarks reported here run single‑process; focus is on algorithmic gains and JIT acceleration rather than multi‑threading
