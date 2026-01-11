@@ -58,3 +58,5 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - Data dictionary: DATA_DICTIONARY.md
 - Release notes: RELEASE_NOTES.md
 - FAQ: FAQ.md
+- Verification guide: VERIFICATION_GUIDE.md
+- Methodology: METHODOLOGY.md
