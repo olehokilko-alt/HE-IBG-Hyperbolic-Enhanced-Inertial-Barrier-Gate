@@ -1,0 +1,100 @@
+{
+  "files": [
+    {
+      "path": "he_only_summary.csv",
+      "sha256": "235bccb1f6b9bedc1801bab9bd03a92a9d4be53272fa4aaa4a9946c49b8b1c92"
+    },
+    {
+      "path": "nonstandard_summary.csv",
+      "sha256": "2195adf44ca77eea225c4e9c60c11eb0aa930ffb0af8e0a2271f1c6cd874700a"
+    },
+    {
+      "path": "official_scenes.json",
+      "sha256": "bf0901c03c2abd21237d3d3228c206b34acc42ef43c93e198a09bd3ab0a5cd0e"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "110091287c56c752d24954d2291900f6a1396b3b5053781378a54f67641e3dec"
+    },
+    {
+      "path": "speedup_constants.json",
+      "sha256": "cd83ca2d4a6955b7cea0c0ec8349abc0bda0860bad162e2b1a4ea2c59886b816"
+    },
+    {
+      "path": "stress_summary.csv",
+      "sha256": "8b7d276424ebc167ee3bf686d018ee95c0167e9b1b182032284a626fca3e2a5b"
+    },
+    {
+      "path": "sweep_summary.csv",
+      "sha256": "ac2e2ac62ddb35132dd7338aaa295e72d82a9ebe694777d37f7d0fe10954dbe0"
+    },
+    {
+      "path": "visual_compare_summary.csv",
+      "sha256": "1faf1ad337975ec0b500adfe187fc7e987aaff8b83e473e30a94170ea0a5a499"
+    },
+    {
+      "path": "legacy_csv/benchmark_results.csv",
+      "sha256": "484271c1827173f617543c6b6218c680015d37a53b897b009c3fb67eb02fb2d4"
+    },
+    {
+      "path": "legacy_csv/dynamic_test_results.csv",
+      "sha256": "8e65fa9b339e92455809930728a7c2ea7b1fdf194d8c072561f2d91c9db4be28"
+    },
+    {
+      "path": "legacy_csv/extreme_scale_results.csv",
+      "sha256": "c0d6e3605b46099274f520ab65e802d123c5b16fe7c922c0da4e7d270fa3c604"
+    },
+    {
+      "path": "legacy_csv/full_compare_results.csv",
+      "sha256": "d1d5979aa5da74ed911b48ab8461d85289b0045cb4346e462a0daa9046ac73ce"
+    },
+    {
+      "path": "legacy_csv/labyrinth_compare_results.csv",
+      "sha256": "6f8cddfc83aebf744e54a702f820717d67fd2d7007b85fcc1a980a8101b27287"
+    },
+    {
+      "path": "legacy_csv/mandatory_test_results.csv",
+      "sha256": "f620a55e9dfc6129a4f2fa184611d8c7fbd0b506bc09f28be797b7dd02f2bfc5"
+    },
+    {
+      "path": "legacy_csv/micro_compare_results.csv",
+      "sha256": "0d6bbb590b3f71c0fd9955fb439b9fb98270b3bb4afd2cc0b02ee58fc50a5b11"
+    },
+    {
+      "path": "legacy_csv/monte_carlo_results.csv",
+      "sha256": "0e9838c31c789e51c0c08fa2f1cc7fca2792fa8b397a4ea3616abe84d0ea40b2"
+    },
+    {
+      "path": "legacy_csv/real_world_full_results.csv",
+      "sha256": "8e96d6c97e958a0804cf59df5be31909896cc0b7245b0801cf8eb39e0896dd0e"
+    },
+    {
+      "path": "legacy_csv/real_world_movingai_results.csv",
+      "sha256": "255b5b2737b3182d8bd301ca3dfc44debf9d81f049d1220fd895949a65159b44"
+    },
+    {
+      "path": "legacy_csv/real_world_results.csv",
+      "sha256": "86127cbc776ea09be19bbd729130be4b74a8a409c07f84e02c9a2bda20fe0f44"
+    },
+    {
+      "path": "legacy_csv/real_world_stress_results.csv",
+      "sha256": "3ce959ec5908188d5e669b3c34eac63f0123f6520c06e664d11fc7a9616ec0ce"
+    },
+    {
+      "path": "legacy_csv/real_world_sweep.csv",
+      "sha256": "2a200c599e721c12400387a80007736e299c1edadb52e7995392e1e6531372d0"
+    },
+    {
+      "path": "legacy_csv/real_world_sweep_multi.csv",
+      "sha256": "4628204bbdb4fc4c6f80279b23c2cd2a31ddc7c5cbafa68e07caaf68958968a6"
+    },
+    {
+      "path": "legacy_csv/recommended_params.csv",
+      "sha256": "11494e0ead9dfd758242ad3319bece5e2a39600636cc8083b8d4ec41970444da"
+    },
+    {
+      "path": "legacy_csv/stress_test_results.csv",
+      "sha256": "278cd2c6ae2f1ae74bf8ca6c925dcb44b1e950e8d263fbfcb3fcb6c558e5a506"
+    }
+  ]
+}

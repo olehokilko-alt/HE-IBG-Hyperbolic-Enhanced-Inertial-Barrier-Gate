@@ -42,6 +42,8 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 ## Reproducibility and Authenticity
 - All scenes include dataset SHA‑256; time, RAM (proc/avail), h_max, h*, and gap are measured live and recorded in JSON/CSV.
 - Reproduction commands live in the working repository (run_real_world_full.py, run_real_world_stress.py, run_real_world_sweep.py, run_visual_compare.py, run_visual_he_only.py).
+ - Release manifests: data/MANIFEST.json lists per‑file SHA‑256 checksums; data/provenance.json records git commit, platform and Python version.
+ - Tagged releases: repository is tagged (e.g., v0.1.0) to freeze state; checksums make tampering evident.
 
 ## Policy
 - Official ranges are conservative statements (21×–46× for Euclidean vs HE‑IBG; 2×–6× for Dijkstra vs HE‑IBG).
