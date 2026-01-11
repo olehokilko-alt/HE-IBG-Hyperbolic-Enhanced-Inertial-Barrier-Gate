@@ -7,6 +7,12 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - Official speedup (Dijkstra vs HE‑IBG): 2×–6×
 - Measured ranges are provided in data/speedup_constants.json; higher speedup means HE‑IBG is faster than the baseline.
 
+## Scaling Behavior
+- Speedups increase with grid size (N) on both datasets:
+  - heightmap: Euclidean/HE = [21.53, 31.66, 46.66] at N = [256, 512, 1024]; Dijkstra/HE = [2.01, 2.08, 5.41]
+  - ost003d: Euclidean/HE = [21.77, 33.98, 39.78] at N = [256, 512, 1024]; Dijkstra/HE = [2.96, 3.75, 5.37]
+- Rationale: HE‑IBG’s JIT‑accelerated O(N²) routines scale better relative to baselines that incur O(N² log N) or heavier per‑step overhead; larger grids amplify the relative advantage.
+
 ## What Makes HE‑IBG Different
 - Minimax (bottleneck) instead of sum of weights: guarantees on the worst obstacle along the route, relevant for safe/wide corridors.
 - Hyperbolic geometry: tunable speed/quality trade‑off via kappa, lambda_geo, K, R.
@@ -65,4 +71,9 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - FAQ: FAQ.md
 - Verification guide: VERIFICATION_GUIDE.md
 - Methodology: METHODOLOGY.md
+ 
+## Quick Verify
+- Windows (PowerShell): `Get-FileHash data/* -Algorithm SHA256` and compare to `data/MANIFEST.json`
+- macOS/Linux: `shasum -a 256 data/* data/legacy_csv/*` and compare to `data/MANIFEST.json`
+- Script: `python tools/check_manifest.py` prints whether all checksums match
   - Includes runtime environment and optimizations (Python + Numba JIT, NumPy arrays, nopython caching)
