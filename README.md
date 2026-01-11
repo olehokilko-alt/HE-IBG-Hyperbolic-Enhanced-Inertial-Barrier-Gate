@@ -13,6 +13,11 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
   - ost003d: Euclidean/HE = [21.77, 33.98, 39.78] at N = [256, 512, 1024]; Dijkstra/HE = [2.96, 3.75, 5.37]
 - Rationale: HE‑IBG’s JIT‑accelerated O(N²) routines scale better relative to baselines that incur O(N² log N) or heavier per‑step overhead; larger grids amplify the relative advantage.
 
+## Scaling Highlights
+- At N = 1024, HE‑IBG achieves ≈46.66× vs Euclidean and ≈5.41× vs Dijkstra on heightmap; ≈39.78× vs Euclidean and ≈5.37× vs Dijkstra on ost003d.
+- The advantage grows consistently from N = 256 → 512 → 1024 on both datasets.
+- Stress tests show stable performance up to 8192×8192 with transparent reporting of pathological cases.
+
 ## What Makes HE‑IBG Different
 - Minimax (bottleneck) instead of sum of weights: guarantees on the worst obstacle along the route, relevant for safe/wide corridors.
 - Hyperbolic geometry: tunable speed/quality trade‑off via kappa, lambda_geo, K, R.
@@ -76,4 +81,10 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - Windows (PowerShell): `Get-FileHash data/* -Algorithm SHA256` and compare to `data/MANIFEST.json`
 - macOS/Linux: `shasum -a 256 data/* data/legacy_csv/*` and compare to `data/MANIFEST.json`
 - Script: `python tools/check_manifest.py` prints whether all checksums match
+
+## How to Interpret Charts
+- Speedup is defined as baseline time divided by HE time; higher => HE is faster.
+- A* uses a different objective (sum‑of‑weights) and is shown for reference only.
+- For bottleneck quality, lower gap = closer to h*; Dijkstra (minimax) provides h* and typically has gap = 0.
+- Use official ranges for conservative claims; measured ranges often exceed them and are reported transparently.
   - Includes runtime environment and optimizations (Python + Numba JIT, NumPy arrays, nopython caching)
