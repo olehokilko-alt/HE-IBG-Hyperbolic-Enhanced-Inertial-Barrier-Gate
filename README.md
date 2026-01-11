@@ -32,6 +32,12 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 - Non‑standard cases: data/nonstandard_summary.csv
 - Official subset (meets minimum thresholds): data/official_scenes.json
 - Full CSV archive: data/legacy_csv
+ 
+## Metric Definitions
+- speedup_E_over_HE = time_Euclidean / time_HE; higher means HE‑IBG is faster than Euclidean.
+- speedup_D_over_HE = time_Dijkstra / time_HE; higher means HE‑IBG is faster than Dijkstra (minimax).
+- speedup_A_over_HE = time_A* / time_HE; A* has a different objective (shortest‑path by sum), so this is for reference only.
+- gap = |h_max − h*| / h*; lower is better. Dijkstra (minimax) provides h* and typically has gap=0 by definition.
 
 ## Reproducibility and Authenticity
 - All scenes include dataset SHA‑256; time, RAM (proc/avail), h_max, h*, and gap are measured live and recorded in JSON/CSV.
