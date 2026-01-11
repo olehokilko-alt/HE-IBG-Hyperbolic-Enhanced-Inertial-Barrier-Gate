@@ -46,3 +46,13 @@ HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach opt
 ## Policy
 - Official ranges are conservative statements (21×–46× for Euclidean vs HE‑IBG; 2×–6× for Dijkstra vs HE‑IBG).
 - Measured results can be higher; official publications use a subset of scenes that meet the minimum thresholds.
+ 
+## Interpretations
+- Speedup values compare runtime baselines against HE‑IBG (higher = HE‑IBG is faster).
+- Euclidean‑IBG baseline implements the same bottleneck objective but with Euclidean geometry (not “shortest path by sum”).
+- A* targets a different objective (sum‑of‑weights shortest path); included for reference only.
+ 
+## References
+- Data dictionary: DATA_DICTIONARY.md
+- Release notes: RELEASE_NOTES.md
+- FAQ: FAQ.md
