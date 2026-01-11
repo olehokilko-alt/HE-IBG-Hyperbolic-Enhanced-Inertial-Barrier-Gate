@@ -2,6 +2,11 @@
 
 HE‑IBG (Hyperbolic‑Enhanced Inertial Barrier Gate) is a routing approach optimized for the minimax (bottleneck) objective. Unlike “shortest path” methods that minimize the sum of weights, HE‑IBG minimizes the largest obstacle along the route (h_max), ensuring corridor width/clearance and robustness on real terrains.
 
+## Key Metrics
+- Official speedup (Euclidean vs HE‑IBG): 21×–46×
+- Official speedup (Dijkstra vs HE‑IBG): 2×–6×
+- Measured ranges are provided in data/speedup_constants.json; higher speedup means HE‑IBG is faster than the baseline.
+
 ## What Makes HE‑IBG Different
 - Minimax (bottleneck) instead of sum of weights: guarantees on the worst obstacle along the route, relevant for safe/wide corridors.
 - Hyperbolic geometry: tunable speed/quality trade‑off via kappa, lambda_geo, K, R.
